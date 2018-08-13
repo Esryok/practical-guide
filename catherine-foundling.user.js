@@ -19,7 +19,7 @@
         var commentParagraphs = content.getElementsByTagName("p");
 
         // skip the last one, which is used for comment likes
-        for (int i = 0; i < commentParagraphs.length - 1; i++) {
+        for (var i = 0; i < commentParagraphs.length - 1; i++) {
             var paragraph = commentParagraphs[i];
             var text = paragraph.innerText;
             // Some of you actually use "chat" correctly. Only strip out greater forms of Evil.
